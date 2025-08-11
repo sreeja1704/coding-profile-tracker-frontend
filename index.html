@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coding Profile Tracker - LeetCode Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1>Coding Profile Tracker</h1>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Profile Section -->
+    <section class="profile">
+      <img id="profilePic" src="https://via.placeholder.com/120" alt="Profile Picture">
+      <div class="profile-details">
+        <h2 id="nameDisplay">Your Name</h2>
+        <p id="bioDisplay">Your bio will appear here...</p>
+        <div class="skills" id="skillsDisplay">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="stat">
+        <h3 id="projectsStat">0</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat">
+        <h3 id="hoursStat">0</h3>
+        <p>Hours Coded</p>
+      </div>
+      <div class="stat">
+        <h3 id="snippetsStat">0</h3>
+        <p>Snippets Saved</p>
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <canvas id="activityChart"></canvas>
+
+    <!-- Edit Section -->
+    <section class="edit-section">
+      <h2>Edit Profile</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name">
+      <textarea id="bioInput" placeholder="Enter your bio"></textarea>
+      <input type="text" id="skillsInput" placeholder="Enter skills (comma separated)">
+      <input type="number" id="projectsInput" placeholder="Projects Completed">
+      <input type="number" id="hoursInput" placeholder="Hours Coded">
+      <input type="number" id="snippetsInput" placeholder="Snippets Saved">
+      <button id="saveBtn">Save Profile</button>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
